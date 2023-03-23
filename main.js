@@ -31,7 +31,11 @@ function drawToDoList()
     console.log(todos[i]);
     const listItem = document.createElement("li");
     listItem.textContent = todos[i];
+    const todoButton = document.createElement("button");
+    todoButton.textContent = "Delete"
     todoList.appendChild(listItem);
+    listItem.appendChild(todo);
+    
   }
 
 }
