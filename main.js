@@ -18,17 +18,14 @@ const form = document.querySelector(".form1");
 const todoTextFromForm = document.querySelector("#todo-item");
 const todoList = document.querySelector(".todolist1");
 
-for (let i = 0; i < todos.length; i++)
-{
-  console.log(todos[i]);
-  const listItem = document.createElement("li");
-  listItem.textContent = todos[i];
-  todoList.appendChild(listItem);
-}
-
 // Functions
 function drawToDoList()
 {
+  while(todoList.firstChild)
+  {
+    todoList.removeChild(todoList.firstChild)
+  }
+  
   for (let i = 0; i < todos.length; i++)
   {
     console.log(todos[i]);
