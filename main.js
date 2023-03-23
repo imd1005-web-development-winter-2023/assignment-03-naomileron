@@ -29,13 +29,19 @@ function drawToDoList()
   for (let i = 0; i < todos.length; i++)
   {
     console.log(todos[i]);
+
     const listItem = document.createElement("li");
     listItem.textContent = todos[i];
+
     const todoButton = document.createElement("button");
     todoButton.textContent = "Delete"
-    todoList.appendChild(listItem);
-    listItem.appendChild(todo);
+    todoButton.classList.add("todoDeleteButton");
     
+    todoButton.dataset.index = i;
+
+    todoList.appendChild(listItem);
+    listItem.appendChild(todoButton);
+
   }
 
 }
