@@ -8,8 +8,8 @@
 //
 
 // Constants
-const appID = "app";
-const headingText = "To do. To done. ✅";
+//const appID = "app";
+//const headingText = "To do. To done. ✅";
 
 // Variables
 
@@ -19,12 +19,34 @@ let appContainer = document.getElementById(appID);
 //
 // Functions
 //
+
+
+
+
+
+
+
+
 document.addEventListener("submit" , addTodo)
 
 function addTodo() 
 {
   console.log("hit submit");
 }
+
+const form = document.querySelector(".form1");
+
+form.addEventListener("submit" , addTodo)
+
+
+
+
+
+
+
+
+
+
 
 // Add a heading to the app container
 function inititialise() {
