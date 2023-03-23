@@ -18,6 +18,8 @@ const form = document.querySelector(".form1");
 const todoTextFromForm = document.querySelector("#todo-item");
 const todoList = document.querySelector(".todolist1");
 
+//reccomended 
+
 // Functions
 function drawToDoList()
 {
