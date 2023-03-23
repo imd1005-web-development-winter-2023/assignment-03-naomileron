@@ -19,6 +19,12 @@ let appContainer = document.getElementById(appID);
 //
 // Functions
 //
+document.addEventListener("submit" , addTodo)
+
+function addTodo() 
+{
+  console.log("hit submit");
+}
 
 // Add a heading to the app container
 function inititialise() {
