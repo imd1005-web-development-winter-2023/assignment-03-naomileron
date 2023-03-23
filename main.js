@@ -29,8 +29,9 @@ let appContainer = document.getElementById(appID);
 
 document.addEventListener("submit" , addTodo)
 
-function addTodo() 
+function addTodo(event) 
 {
+  event.preventDefault();
   console.log("hit submit");
 }
 
