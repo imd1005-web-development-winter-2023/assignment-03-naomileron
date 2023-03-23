@@ -39,6 +39,7 @@ function drawToDoList()
     
     todoButton.dataset.index = i;
 
+    todoButton.addEventListener("click" , deleteTo);
     todoList.appendChild(listItem);
     listItem.appendChild(todoButton);
 
@@ -46,6 +47,13 @@ function drawToDoList()
 
 }
 
+function deleteTodo(event)
+{
+  console.log("Delete button index", event.target.dataset.imdex);
+
+  toDeleteIndex
+  todod.splice();
+}
 function addTodo(event) 
 {
   event.preventDefault();
