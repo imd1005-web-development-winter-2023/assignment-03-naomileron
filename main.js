@@ -12,16 +12,24 @@
 //const headingText = "To do. To done. ✅";
 
 // Variables
+const todos = [];
+const form = document.querySelector(".form1");
+const todoTextFromForm = document.querySelector("#todo-item");
 
-// DOM Elements
-let appContainer = document.getElementById(appID);
 
-//
 // Functions
-//
+function addTodo(event) 
+{
+  event.preventDefault();
+  console.log("hit submit");
+  todoTextFromForm.value;
+  todos.push(todoTextFromForm.value);
+  console.log(todos)
+  form.reset();
+}
 
 
-
+console.log(todoTextFromForm.value)
 
 
 
@@ -29,13 +37,9 @@ let appContainer = document.getElementById(appID);
 
 document.addEventListener("submit" , addTodo)
 
-function addTodo(event) 
-{
-  event.preventDefault();
-  console.log("hit submit");
-}
 
-const form = document.querySelector(".form1");
+
+
 
 form.addEventListener("submit" , addTodo)
 
@@ -46,6 +50,9 @@ form.addEventListener("submit" , addTodo)
 
 
 
+
+// DOM Elements
+let appContainer = document.getElementById(appID);
 
 
 
