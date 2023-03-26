@@ -5,8 +5,12 @@ window.addEventListener('load', () =>
   const list_el = document.querySelector("#tasks");
   console.log(form);
 
-  form.addEventListener('submit', (e) => 
+  form.addEventListener('submit', (event) => 
   {
+    event.preventDefault();
+    console.log("hit submit");
 
+    const task_element = document.createElement("div");
+    task_element.classList.add("")
   })
 })
