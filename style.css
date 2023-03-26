@@ -62,10 +62,69 @@ input, button
 {
   flex: 1 1 0%;
   background-color: var(--darker);
-  padding: 1rem;
+  padding: 0.9rem;
   border-radius: 2rem;
+  color: var(--light);
+  font-size: 1.15rem;
 }
 
+#todo-input::placeholder
+{
+  color: var(--light);
+  font-weight: 250;
+}
+
+#new-todo-submission
+{
+  color: var(--pink);
+  font-size: 1.15rem;
+  font-weight: 800;
+  background-image: linear-gradient(to bottom, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-todo-submission:hover 
+{
+  opacity: 0.8;  
+}
+
+#new-todo-submission:active
+{
+  opacity: 0.6;
+}
+
+main
+{
+  flex: 1 1 0%;
+  justify-content: center;
+  background-color: green;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todo-list
+{
+  padding: 1rem;
+}
+
+.todo-list h2
+{
+  font-size: 2.5rem;
+  font-weight:300;
+  margin-bottom: 1rem;
+}
+
+#tasks.task
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  border-radius: 2rem;
+}
 
 /*Screen reader text utility class*/
 .sr-only {
