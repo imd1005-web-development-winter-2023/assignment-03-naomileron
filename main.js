@@ -23,6 +23,16 @@ window.addEventListener('load', () =>
 
     task_element.appendChild(task_content_element);
 
+    const task_input_element = document.createElement("input");
+    task_input_element.classList.add("text");
+    task_input_element.type = "text";
+    task_input_element.type = task;
+    task_input_element.setAttribute("readonly" , "readonly");
+
+    task_content_element.appendChild(task_input_element);
+
+    const_actions_element = document.createElement("div");
+
     list_element.appendChild(task_element);
 
   })
