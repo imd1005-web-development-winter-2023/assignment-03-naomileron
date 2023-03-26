@@ -12,6 +12,7 @@
   --purple: #8B5CF6;
 }
 
+/*Style*/
 *{
   box-sizing: border-box;
   margin: 0;
@@ -21,7 +22,48 @@
 body{
   display:flex;
   flex-direction: column;
-  align-items: center;
+  background: var(--dark);
+  color: #FFF;
+}
+
+header
+{
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  background-color: red;
+}
+
+header h1 
+{
+  font-size: 3rem;
+  font-weight:300;
+  margin-bottom: 1rem;
+}
+
+#add-list-item
+{
+  display: flex;
+
+}
+
+input, button
+{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+
+}
+
+#todo-input
+{
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
 
