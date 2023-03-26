@@ -39,6 +39,7 @@ header
   background-color: red;
 }
 
+/*Todo list title*/
 header h1 
 {
   font-size: 3rem;
@@ -46,6 +47,7 @@ header h1
   margin-bottom: 1rem;
 }
 
+/*Add a todo item*/
 #add-list-item
 {
   display: flex;
@@ -109,6 +111,7 @@ main
   margin: 0 auto;
 }
 
+/*Task Title*/
 .todo-list
 {
   padding: 1rem;
@@ -121,6 +124,7 @@ main
   margin-bottom: 1rem;
 }
 
+/*Tasks*/
 #tasks #task
 {
   display: flex;
@@ -147,6 +151,7 @@ main
   margin: 0 -0.5rem;
 }
 
+/*Edit and Delete Buttons*/
 #task .actions button
 {
   cursor: pointer;
