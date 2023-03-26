@@ -72,6 +72,7 @@ input, button
 {
   color: var(--light);
   font-weight: 250;
+  opacity: 75%;
 }
 
 #new-todo-submission
@@ -86,7 +87,7 @@ input, button
 #new-todo-submission:hover 
 {
   opacity: 0.8;
-  transform: scale(1.01);
+  transform: scale(1.10);
 }
 
 #new-todo-submission:active
