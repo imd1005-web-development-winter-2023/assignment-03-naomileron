@@ -85,12 +85,14 @@ input, button
 
 #new-todo-submission:hover 
 {
-  opacity: 0.8;  
+  opacity: 0.8;
+  transform: scale(1.01);
 }
 
 #new-todo-submission:active
 {
   opacity: 0.6;
+  transform: scale(0.95);
 }
 
 main
