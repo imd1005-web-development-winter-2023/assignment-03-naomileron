@@ -85,7 +85,7 @@ input, button
 
 #new-todo-submission
 {
-  color: var(--darker);
+  color: var(--light);
   font-size: 1.15rem;
   font-weight: 800;
   cursor: pointer;
@@ -134,13 +134,13 @@ main
   justify-content: space-between;
   background-color: var(--darkest);
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .content input
 {
   color: var(--light);
   font-size: 1.2rem;
-  transition: 0.4s;
 }
 
 /*.todoText input:not(:read-only)
