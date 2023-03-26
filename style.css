@@ -10,6 +10,9 @@
   --light: #EEE;
   --pink: #EC4899;
   --purple: #8B5CF6;
+  --normalRed: #be2105;
+  --brightRed: #f32400;
+  --darkRed: #881400;
 }
 
 /*Style*/
@@ -148,13 +151,13 @@ main
 
 
 /*Edit and Delete/Done Buttons*/
-#tasks #task .actions
+#tasks .task .actions
 {
   display: flex;
   margin: 0 -0.5rem;
 }
 
-#task .actions button
+.task .actions button
 {
   cursor: pointer;
   margin: 0 0.5rem;
@@ -163,19 +166,8 @@ main
   transition: 0.4s;
 }
 
-#task .actions button:hover 
-{
-  opacity: 0.8;
-  transform: scale(1.10);
-}
-
-#task .actions button:active
-{
-  opacity: 0.6;
-  transform: scale(0.95);
-}
-
-#task .actions .edit
+/*Edit Button Style*/
+.task .actions .edit
 {
   color: var(--light);
   background-color: var(--gray); 
@@ -183,12 +175,35 @@ main
   border-radius: 1.2rem;
 }
 
-#task .actions .delete
+.task .actions .edit:hover 
+{
+  transform: scale(1.10);
+}
+
+.task .actions .edit:active
+{
+  transform: scale(0.95);
+}
+
+/*Delete button style*/
+.task .actions .delete
 {
   color: var(--light);
-  background-color: red; 
+  background-color: var(--normalRed); 
   padding: 0.2rem;
   border-radius: 1.2rem;
+}
+
+.task .actions .delete:hover 
+{
+  background-color: var(--brightRed);
+  transform: scale(1.10);
+}
+
+.task .actions .delete:active
+{
+  background-color: var(--darkRed);
+  transform: scale(0.95);
 }
 
 /*Screen reader text utility class*/
