@@ -132,8 +132,57 @@ main
 #tasks #tasks #content #text
 {
   color: var(--light);
+  transition: 0.4s;
 }
 
+#tasks #tasks #content #text:not(:read-only)
+{
+  color: var(--pink);
+  transform: scale(1.05);
+}
+
+#tasks #task .actions
+{
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+#task .actions button
+{
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  transition: 0.4s;
+}
+
+#task .actions button:hover 
+{
+  opacity: 0.8;
+  transform: scale(1.10);
+}
+
+#task .actions button:active
+{
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
+#task .actions .edit
+{
+  color: var(--light);
+  background-color: var(--gray); 
+  padding: 0.5rem;
+  border-radius: 1.2rem;
+}
+
+#task .actions .delete
+{
+  color: var(--light);
+  background-color: red; 
+  padding: 0.5rem;
+  border-radius: 1.2rem;
+}
 
 /*Screen reader text utility class*/
 .sr-only {
