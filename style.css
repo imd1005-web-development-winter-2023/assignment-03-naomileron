@@ -19,7 +19,8 @@
   font-family:'Segoe UI';
 }
 
-body{
+body
+{
   display:flex;
   flex-direction: column;
   background: var(--dark);
@@ -125,8 +126,14 @@ main
   display: flex;
   justify-content: space-between;
   background-color: var(--darkest);
-  border-radius: 2rem;
+  padding: 1rem;
 }
+
+#tasks #tasks #content #text
+{
+  color: var(--light);
+}
+
 
 /*Screen reader text utility class*/
 .sr-only {
