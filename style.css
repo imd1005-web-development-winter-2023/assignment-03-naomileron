@@ -136,7 +136,7 @@ main
   padding: 1rem;
 }
 
-.todoText input
+.content input
 {
   color: var(--light);
   font-size: 1.2rem;
