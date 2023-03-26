@@ -10,12 +10,15 @@ window.addEventListener('load', () =>
     event.preventDefault();
     console.log("hit submit");
 
+    const task = input.value;
+
     const task_element = document.createElement("div");
     task_element.classList.add("task");
 
     const task_content_element = document.createElement("div");
     task_content_element.classList.add("content");
-    task_content_element.innerText = task; 
+    task_content_element.innerText = "I am a task";
+    
 
     task_element.appendChild(task_content_element);
 
