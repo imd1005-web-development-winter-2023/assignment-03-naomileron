@@ -76,12 +76,9 @@ input, button
 
 #new-todo-submission
 {
-  color: var(--pink);
+  color: var(--darker);
   font-size: 1.15rem;
   font-weight: 800;
-  background-image: linear-gradient(to bottom, var(--pink), var(--purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: 0.4s;
 }
