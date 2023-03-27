@@ -1,47 +1,215 @@
-/*
-  CSS File
-*/
+/*CSS File*/
 
-/*
- VARIABLES
-*/
-:root {
-  /* Core colours */
-  /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
-
-  /* Header configuration */
-  --header-heading-colour: var(--colour-peppermint);
-
-  /* Body configuration */
-  --body-default-colour: var(--colour-cello);
-  --body-background-colour: var(--colour-peppermint);
+/*VARIABLES*/
+:root
+{
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --lightGray: #979797;
+  --gray: #6B7280;
+  --darkGray: #474747;
+  --light: #EEE;
+  --purple: #8B5CF6;
+  --normalRed: #be2105;
+  --brightRed: #f32400;
+  --darkRed: #881400;
 }
 
-/*
-  PAGE / BODY
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+/*Style*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family:'Segoe UI';
 }
 
-main {
-  min-height: 100vh;
+body
+{
+  display:flex;
+  flex-direction: column;
+  background: var(--dark);
+  color: #FFF;
+}
 
+header
+{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  /*background-color: red;*/
 }
 
-/*
-  Screen reader text utility class
-*/
+/*Todo list title*/
+header h1 
+{
+  font-size: 3rem;
+  font-weight:300;
+  margin-bottom: 1rem;
+}
+
+/*Add a todo item*/
+#add-list-item
+{
+  display: flex;
+
+}
+
+input, button
+{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+
+}
+
+#todo-input
+{
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 0.9rem;
+  border-radius: 2rem;
+  color: var(--light);
+  font-size: 1.15rem;
+}
+
+#todo-input::placeholder
+{
+  color: var(--light);
+  font-weight: 250;
+  opacity: 75%;
+}
+
+#new-todo-submission
+{
+  color: var(--light);
+  font-size: 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-todo-submission:hover 
+{
+  opacity: 0.8;
+  transform: scale(1.10);
+}
+
+#new-todo-submission:active
+{
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
+main
+{
+  flex: 1 1 0%;
+  text-align: center;
+  word-break: break-word;
+  /*background-color: green;*/
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Task Title*/
+.todo-list
+{
+  padding: 1rem;
+}
+
+.todo-list h2
+{
+  font-size: 2.5rem;
+  font-weight:300;
+  margin-bottom: 1rem;
+}
+
+/*Tasks*/
+#tasks .task .content 
+{
+  flex: 1 1 0%;
+}
+
+#tasks .task
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content input
+{
+  color: var(--light);
+  font-size: 1.2rem;
+}
+
+
+/*Edit and Delete/Done Buttons*/
+#tasks .task .actions
+{
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button
+{
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+/*Edit Button Style*/
+.task .actions .edit
+{
+  color: var(--light);
+  background-color: var(--gray); 
+  padding: 0.5rem;
+  border-radius: 1.2rem;
+}
+
+.task .actions .edit:hover 
+{
+  background-color: var(--lightGray);
+  transform: scale(1.10);
+}
+
+.task .actions .edit:active
+{
+  background-color: var(--darkGray);
+  transform: scale(0.95);
+}
+
+/*Delete button style*/
+.task .actions .delete
+{
+  color: var(--light);
+  background-color: var(--normalRed); 
+  padding: 0.2rem;
+  border-radius: 1.2rem;
+}
+
+.task .actions .delete:hover 
+{
+  background-color: var(--brightRed);
+  transform: scale(1.10);
+}
+
+.task .actions .delete:active
+{
+  background-color: var(--darkRed);
+  transform: scale(0.95);
+}
+
+/*Screen reader text utility class*/
 .sr-only {
   position: absolute;
   width: 1px;
