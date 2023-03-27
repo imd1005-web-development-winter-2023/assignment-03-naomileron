@@ -150,12 +150,6 @@ main
   font-size: 1.2rem;
 }
 
-/*.todoText input:not(:read-only)
-{
-  color: var(--pink);
-  transform: scale(1.05);
-}*/
-
 
 /*Edit and Delete/Done Buttons*/
 #tasks .task .actions
