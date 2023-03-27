@@ -109,6 +109,7 @@ main
 {
   flex: 1 1 0%;
   text-align: center;
+  word-break: break-word;
   /*background-color: green;*/
   max-width: 800px;
   width: 100%;
