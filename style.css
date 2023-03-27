@@ -6,9 +6,10 @@
   --dark: #374151;
   --darker: #1f2937;
   --darkest: #111827;
+  --lightGray: #979797;
   --gray: #6B7280;
+  --darkGray: #474747;
   --light: #EEE;
-  --pink: #EC4899;
   --purple: #8B5CF6;
   --normalRed: #be2105;
   --brightRed: #f32400;
@@ -182,11 +183,13 @@ main
 
 .task .actions .edit:hover 
 {
+  background-color: var(--lightGray);
   transform: scale(1.10);
 }
 
 .task .actions .edit:active
 {
+  background-color: var(--darkGray);
   transform: scale(0.95);
 }
 
